@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE ViewObject SYSTEM "jbo_03_01.dtd">
+<!---->
+<ViewObject
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="ClassroomsView"
+  Version="12.1.3.10.47"
+  InheritPersonalization="merge"
+  SelectListFlags="1"
+  FromListFlags="1"
+  WhereFlags="1"
+  BindingStyle="OracleName"
+  CustomQuery="false"
+  SelectAllAttributes="false"
+  PageIterMode="Full">
+  <EntityUsage
+    Name="Classrooms"
+    Entity="model.entity.Classrooms"/>
+  <ViewAttribute
+    Name="RoomNumber"
+    IsNotNull="true"
+    PrecisionRule="true"
+    EntityAttrName="RoomNumber"
+    EntityUsage="Classrooms"
+    AliasName="ROOM_NUMBER"/>
+  <ViewAttribute
+    Name="GradeNumber"
+    PrecisionRule="true"
+    EntityAttrName="GradeNumber"
+    EntityUsage="Classrooms"
+    AliasName="GRADE_NUMBER"/>
+</ViewObject>
